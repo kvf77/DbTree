@@ -181,14 +181,14 @@ class DbTreeExt extends DbTree
     /**
      * Sort children in a tree for $orderField in alphabetical order.
      *
-     * @param integer $id - Parent's ID.
+     * @param integer $parentId - Parent's ID.
      * @param string $orderField - the name of the field on which sorting will go
      */
-    public function SortChildren($id, $orderField)
+    public function SortChildren($parentId, $orderField)
     {
-        $node = $this->GetNode($id);
+        $node = $this->GetNode($parentId);
         $data = $this->Branch(
-            $id,
+            $parentId,
             array(
                 $this->tableId
             ), array(
