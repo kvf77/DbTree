@@ -24,7 +24,7 @@ This source file is part of the SESMIK CMS.
 - `SortChildren` - Sort children in a tree for $orderField in alphabetical order.
 
 ## History
-- v4.2 - added fully functionl demo samples
+- v4.2 - added fully functional demo samples
 - v4.1 - added new method SortChildren
 
 russian dicumentation [http://www.sesmikcms.ru/pages/read/biblioteka-dlja-raboty-s-derevjami-nested-sets/](http://www.sesmikcms.ru/pages/read/biblioteka-dlja-raboty-s-derevjami-nested-sets/)
