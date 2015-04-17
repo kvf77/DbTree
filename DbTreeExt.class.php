@@ -10,7 +10,7 @@
  * @link http://www.sesmikcms.ru homesite (russian lang)
  * @link https://github.com/kvf77/DbTree GitHub (english lang)
  * @copyright (c) by Kuzma Feskov
- * @version 4.1, 2015-04-13
+ * @version 4.2, 2015-04-17
  *
  * CLASS DESCRIPTION:
  * This class extends basic functions of DbTree class.
@@ -31,6 +31,7 @@
  *
  * CHANGELOG:
  *
+ * v4.2 - Added fully functional demo samples.
  * v4.1 - Correction of the documentation.
  *        Added new method SortChildren
  * v4.0
@@ -181,14 +182,14 @@ class DbTreeExt extends DbTree
     /**
      * Sort children in a tree for $orderField in alphabetical order.
      *
-     * @param integer $parentId - Parent's ID.
+     * @param integer $id - Parent's ID.
      * @param string $orderField - the name of the field on which sorting will go
      */
-    public function SortChildren($parentId, $orderField)
+    public function SortChildren($id, $orderField)
     {
-        $node = $this->GetNode($parentId);
+        $node = $this->GetNode($id);
         $data = $this->Branch(
-            $parentId,
+            $id,
             array(
                 $this->tableId
             ), array(
