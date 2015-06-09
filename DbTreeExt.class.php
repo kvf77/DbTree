@@ -10,7 +10,7 @@
  * @link http://www.sesmikcms.ru homesite (russian lang)
  * @link https://github.com/kvf77/DbTree GitHub (english lang)
  * @copyright (c) by Kuzma Feskov
- * @version 4.2, 2015-04-17
+ * @version 4.3, 2015-06-09
  *
  * CLASS DESCRIPTION:
  * This class extends basic functions of DbTree class.
@@ -31,6 +31,7 @@
  *
  * CHANGELOG:
  *
+ * v4.3 - Added new method MakeUlList
  * v4.2 - Added fully functional demo samples.
  * v4.1 - Correction of the documentation.
  *        Added new method SortChildren
@@ -220,6 +221,56 @@ class DbTreeExt extends DbTree
                 }
             }
         }
+    }
+
+    /**
+     * Makes UL/LI html from nested sets tree with links (if needed). UL id named as table_name + _tree.
+     *
+     * @param array $tree - nested sets tree array
+     * @param string $nameField - name of field that contains title of URL
+     * @param null|string $linkField - name of field that contains URL (if needed)
+     * @param null|string $linkPrefix - URL prefix (if needed)
+     * @return string - UL/LI html code
+     */
+    public function MakeUlList($tree, $nameField, $linkField = null, $linkPrefix = null)
+    {
+        $current_depth = 0;
+        $node_depth = 0;
+        $counter = 0;
+
+        $result = '<ul id="' . $this->table . '_tree">';
+
+        foreach ($tree as $node) {
+            $node_depth = $node[$this->tableLevel];
+            $node_name = $node[$nameField];
+
+            if ($node_depth == $current_depth) {
+                if ($counter > 0) $result .= '</li>';
+            } elseif ($node_depth > $current_depth) {
+                $result .= '<ul>';
+                $current_depth = $current_depth + ($node_depth - $current_depth);
+            } elseif ($node_depth < $current_depth) {
+                $result .= str_repeat('</li></ul>', $current_depth - $node_depth) . '</li>';
+                $current_depth = $current_depth - ($current_depth - $node_depth);
+            }
+
+            $result .= '<li>';
+
+            if (!is_null($linkField)) {
+                $link = !is_null($linkPrefix) ? $linkPrefix . $node[$linkField] : $node[$linkField];
+
+                $result .= '<a href="' . $link . '">' . $node_name . '</a>';
+            } else {
+                $result .= $node_name;
+            }
+            ++$counter;
+        }
+
+        $result .= str_repeat('</li></ul>', $node_depth) . '</li>';
+
+        $result .= '</ul>';
+
+        return $result;
     }
 }
 

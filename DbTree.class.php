@@ -10,7 +10,7 @@
  * @link http://www.sesmikcms.ru homesite (russian lang)
  * @link https://github.com/kvf77/DbTree GitHub (english lang)
  * @copyright (c) by Kuzma Feskov
- * @version 4.2, 2015-04-17
+ * @version 4.3, 2015-06-09
  *
  * CLASS DESCRIPTION:
  * This class can be used to manipulate nested sets of database table
@@ -36,6 +36,7 @@
  *
  * CHANGELOG:
  *
+ * v4.3 - Added new method MakeUlList
  * v4.2 - Added fully functional demo samples.
  * v4.1 - Correction of the documentation.
  *        Added new method SortChildren

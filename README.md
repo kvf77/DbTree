@@ -22,8 +22,10 @@ This source file is part of the SESMIK CMS.
 - `Parents` - Returns all parents of element with number $nodeId.
 - `Ajar` - Returns a slightly opened tree from an element with number $nodeId.
 - `SortChildren` - Sort children in a tree for $orderField in alphabetical order.
+- `MakeUlList` - Makes UL/LI html from nested sets tree with links (if needed). UL id named as table_name + _tree.
 
 ## History
+- v4.3 - Added new method MakeUlList
 - v4.2 - added fully functional demo samples
 - v4.1 - added new method SortChildren
 
