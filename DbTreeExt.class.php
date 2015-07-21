@@ -260,6 +260,7 @@ class DbTreeExt extends DbTree
 
             if (!empty($linkField)) {
                 $link_data = array();
+                $linkField = !is_array($linkField) ? array($linkField) : $linkField;
                 foreach($linkField as $field) {
                     $link_data[] = $node[$field];
                 }
