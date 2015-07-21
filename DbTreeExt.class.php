@@ -31,6 +31,7 @@
  *
  * CHANGELOG:
  *
+ * v4.4 - MakeUlList modified
  * v4.3 - Added new method MakeUlList
  * v4.2 - Added fully functional demo samples.
  * v4.1 - Correction of the documentation.
@@ -228,11 +229,12 @@ class DbTreeExt extends DbTree
      *
      * @param array $tree - nested sets tree array
      * @param string $nameField - name of field that contains title of URL
-     * @param null|string $linkField - name of field that contains URL (if needed)
+     * @param array $linkField - name of field that contains URL (if needed)
      * @param null|string $linkPrefix - URL prefix (if needed)
+     * @param string $delimiter - linkField delimiter
      * @return string - UL/LI html code
      */
-    public function MakeUlList($tree, $nameField, $linkField = null, $linkPrefix = null)
+    public function MakeUlList($tree, $nameField, $linkField = array(), $linkPrefix = null, $delimiter = '')
     {
         $current_depth = 0;
         $node_depth = 0;
@@ -256,8 +258,13 @@ class DbTreeExt extends DbTree
 
             $result .= '<li>';
 
-            if (!is_null($linkField)) {
-                $link = !is_null($linkPrefix) ? $linkPrefix . $node[$linkField] : $node[$linkField];
+            if (!empty($linkField)) {
+                $link_data = array();
+                foreach($linkField as $field) {
+                    $link_data[] = $node[$field];
+                }
+
+                $link = !is_null($linkPrefix) ? $linkPrefix . implode($delimiter, $link_data) : implode($delimiter, $link_data);
 
                 $result .= '<a href="' . $link . '">' . $node_name . '</a>';
             } else {

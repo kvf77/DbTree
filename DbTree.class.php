@@ -36,6 +36,7 @@
  *
  * CHANGELOG:
  *
+ * v4.4 - MakeUlList modified
  * v4.3 - Added new method MakeUlList
  * v4.2 - Added fully functional demo samples.
  * v4.1 - Correction of the documentation.

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73de3df3-5304-4dbe-a7af-19fa40d561a6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DbTree.class.php" afterPath="$PROJECT_DIR$/DbTree.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DbTreeExt.class.php" afterPath="$PROJECT_DIR$/DbTreeExt.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-    </list>
+    <list default="true" id="73de3df3-5304-4dbe-a7af-19fa40d561a6" name="Default" comment="" />
     <ignored path="DbTree.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -25,45 +21,7 @@
     <favorites_list name="DbTree" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DbTreeExt.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DbTreeExt.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.6153846">
-              <caret line="226" column="104" selection-start-line="226" selection-start-column="7" selection-end-line="226" selection-end-column="104" />
-              <folding>
-                <element signature="e#8#1144#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41005024">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbTree.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DbTree.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="288.69232">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <marker date="1433844558395" expanded="true" signature="6575:6596" placeholder="INSERT INTO ..." />
-                <marker date="1433844558395" expanded="true" signature="8154:8175" placeholder="INSERT INTO ..." />
-                <marker date="1433844558395" expanded="true" signature="21234:21298" placeholder="DELETE FROM ..." />
-                <marker date="1433844558395" expanded="true" signature="22926:23019" placeholder="DELETE FROM ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -143,6 +101,29 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sesmikcms" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -155,8 +136,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -188,23 +169,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DbTree.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="288.69232">
+        <state vertical-scroll-proportion="-7.5513077">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
-            <marker date="1433844558395" expanded="true" signature="6575:6596" placeholder="INSERT INTO ..." />
-            <marker date="1433844558395" expanded="true" signature="8154:8175" placeholder="INSERT INTO ..." />
-            <marker date="1433844558395" expanded="true" signature="21234:21298" placeholder="DELETE FROM ..." />
-            <marker date="1433844558395" expanded="true" signature="22926:23019" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DbTreeExt.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6153846">
-          <caret line="226" column="104" selection-start-line="226" selection-start-column="7" selection-end-line="226" selection-end-column="104" />
-          <folding>
-            <element signature="e#8#1144#0#PHP" expanded="true" />
+            <marker date="1433844558395" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1433844558395" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1433844558395" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1433844558395" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -212,8 +183,18 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41005024">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DbTreeExt.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17907445">
+          <caret line="234" column="88" selection-start-line="234" selection-start-column="20" selection-end-line="234" selection-end-column="88" />
+          <folding>
+            <element signature="e#8#1144#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

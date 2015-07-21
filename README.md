@@ -25,6 +25,7 @@ This source file is part of the SESMIK CMS.
 - `MakeUlList` - Makes UL/LI html from nested sets tree with links (if needed). UL id named as table_name + _tree.
 
 ## History
+- v4.4 - MakeUlList modified
 - v4.3 - Added new method MakeUlList
 - v4.2 - added fully functional demo samples
 - v4.1 - added new method SortChildren
